@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .link {
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 10px;
+        border: 2px solid dodgerblue;
+        text-decoration: none;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .link:hover {
+        background-color: white;
+        color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Frame 2</h2>
+    <a
+      href="https://en.wikipedia.org/wiki/Election"
+      class="link"
+      target="_parent"
+      >Click Me</a
+    >
+
+    <br />
+    <iframe src="./frame3.html" frameborder="2"></iframe>
+  </body>
+</html>
