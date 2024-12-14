@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 600px;
+        height: 500px;
+        display: flex;
+        gap: 10px;
+        & .box {
+          width: 20%;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 10px;
+          transition: all ease 0.6s;
+
+          & .Image {
+            height: 100%;
+          }
+
+          &:hover {
+            width: 80%;
+
+            & .Image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          class="Image Image1"
+          src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Image_1"
+        />
+      </div>
+      <div class="box">
+        <img
+          class="Image Image2"
+          src="https://images.pexels.com/photos/826410/pexels-photo-826410.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Image_2"
+        />
+      </div>
+      <div class="box">
+        <img
+          class="Image Image3"
+          src="https://images.pexels.com/photos/27831628/pexels-photo-27831628/free-photo-of-a-hummingbird-is-hovering-over-purple-flowers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Image_3"
+        />
+      </div>
+
+      <div class="box">
+        <img
+          class="Image Image4"
+          src="https://images.pexels.com/photos/19445502/pexels-photo-19445502/free-photo-of-hummingbird-flying-by-flowers.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Image_4"
+        />
+      </div>
+
+      <div class="box">
+        <img
+          class="Image Image5"
+          src="https://images.pexels.com/photos/16863821/pexels-photo-16863821/free-photo-of-close-up-of-a-hummingbird-drinking-nectar-from-a-flower.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Image_5"
+        />
+      </div>
+
+      <div class="box">
+        <img
+          class="Image Image6"
+          src="https://images.pexels.com/photos/13942302/pexels-photo-13942302.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Image_6"
+        />
+      </div>
+    </div>
+  </body>
+</html>
