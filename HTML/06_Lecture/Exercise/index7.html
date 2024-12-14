@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This Is Image Demo</h1>
+
+    <img
+      src="./download.png"
+      data-src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="Example Image"
+      class="lazy"
+    />
+
+    <script>
+      //    This event listener waits until the HTML document has been completely loaded and parsed (DOM ready).
+      //    It ensures that the script will execute only after the structure of the page is available, preventing errors if elements are accessed before they exist.
+
+      document.addEventListener("DOMContentLoaded", lazyFunction);
+
+      function lazyFunction() {
+        const lazyImages = document.getElementsByClassName("lazy"); // Get elements by class name
+        Array.from(lazyImages).forEach((img) => {
+          // Convert HTMLCollection to an array
+          setTimeout(() => {
+            img.src = img.dataset.src; // Set the actual image after 3 seconds
+          }, 3000);
+        });
+      }
+    </script>
+  </body>
+</html>
