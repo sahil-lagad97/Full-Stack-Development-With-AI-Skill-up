@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: white;
+        color: #0070f3;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 5px;
+        outline: none;
+        border: #0070f3 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="./submit.html"
+      method="get"
+      style="
+        background-color: #0070f3;
+        color: white;
+        width: 400px;
+        padding: 15px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      "
+    >
+      <table>
+        <tr>
+          <td
+            colspan="2"
+            style="text-align: center; padding: 10px; font-size: 18px"
+          >
+            Login Form
+          </td>
+        </tr>
+        <tr>
+          <td><label for="usernmae">Username</label></td>
+          <td><input type="text" name="username" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="text" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="language">Select a Language</label></td>
+          <td>
+            <select
+              style="width: 100%; padding: 2px"
+              name="language"
+              id="language"
+            >
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Javascript">Javascript</option>
+              <option value="Bootstrap">Bootstrap</option>
+              <option value="Angular Js">Angular Js</option>
+              <option value="React Js">React Js</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="categories">categories of software </label></td>
+          <td>
+            <select
+              style="width: 100%; padding: 2px"
+              name="categories"
+              id="categories"
+            >
+              <optgroup label="Application software">
+                <option value="Word Processor">Word Processors</option>
+                <option value="Web browsers">Web browsers</option>
+                <option value="Spreadsheets">Spreadsheets</option>
+              </optgroup>
+              <optgroup label="Operating systems (OS)">
+                <option value="Distributed OS">Distributed OS</option>
+                <option value="Network OS">Network OS</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address</label></td>
+          <td>
+            <textarea name="address" id="address" rows="3"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="carrer">Career</label></td>
+          <td>
+            <input type="text" list="careers" name="career" id="career" />
+            <datalist id="careers">
+              <option>Full Stack Developer</option>
+              <option>Backend Developer</option>
+              <option>Frontend Developer</option>
+              <option>React Developer</option>
+              <option>Devops Developer</option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: end">
+            <input type="submit" /> <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
