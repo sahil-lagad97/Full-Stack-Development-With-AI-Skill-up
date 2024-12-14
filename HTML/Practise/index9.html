@@ -15,6 +15,11 @@
         outline: none;
         border: #0070f3 2px solid;
       }
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
     </style>
   </head>
   <body>
@@ -105,6 +110,92 @@
               <option>Devops Developer</option>
             </datalist>
           </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">gender</label>
+          </td>
+          <td>
+            <input
+              type="radio"
+              id="gender"
+              name="gender"
+              value="female"
+            />female
+            <input type="radio" id="gender" name="gender" value="male" />male
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="hobbies">Hobbies</label></td>
+          <td>
+            <input type="checkbox" name="hobbies" id="hobbies" value="eating" />
+            Eating
+            <input type="checkbox" name="hobbies" id="hobbies" value="coding" />
+            coding
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="hobbies"
+              value="sleeping"
+            />
+            Sleeping
+          </td>
+        </tr>
+        <tr>
+          <td><label for="shirt-color">T-shirt Color </label></td>
+          <td>
+            <input
+              type="color"
+              name="shirt-color"
+              id="shirt-color"
+              style="outline: none; border: none"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Admission_Month">Admission Month</label>
+          </td>
+          <td>
+            <input type="month" name="Admission_Month" id="Admission_Month" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Date_Of_Birth">Date Of Birth</label>
+          </td>
+          <td>
+            <input type="date" name="Date_Of_Birth" id="Date_Of_Birth" />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="Age">Age</label></td>
+          <td><input type="number" id="Age" name="Age" min="18" max="60" /></td>
+        </tr>
+        <tr>
+          <td><label for="salary">Salary</label></td>
+          <td>
+            <input
+              type="range"
+              min="10000"
+              max="10000000"
+              name="salary"
+              id="salary"
+              onclick="alert(document.getElementById('salary').value)"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Search_Friend">Search Friend</label></td>
+          <td>
+            <input type="search" name="Search_Friend" id="Search_Friend" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Github">Github Profile</label></td>
+          <td><input type="url" name="Github" id="Github" /></td>
         </tr>
         <tr>
           <td colspan="2" style="text-align: end">
