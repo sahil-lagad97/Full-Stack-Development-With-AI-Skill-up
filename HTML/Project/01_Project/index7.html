@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <style>
+      table {
+        width: 100%;
+
+        & thead {
+          background-color: dodgerblue;
+          color: white;
+
+          & th:nth-child(1) {
+            border-start-start-radius: 10px;
+          }
+          & th:nth-child(3) {
+            border-start-end-radius: 10px;
+          }
+        }
+        & tbody {
+          & tr:nth-child(even) {
+            background-color: dodgerblue;
+          }
+          & tr:nth-child(odd) {
+            background-color: rgb(175, 215, 255);
+          }
+          & tr:last-child {
+            & td:nth-child(1) {
+              border-end-start-radius: 10px;
+            }
+            & td:nth-child(3) {
+              border-end-end-radius: 10px;
+            }
+          }
+        }
+
+        & tbody {
+          & tr:hover {
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      td,
+      th {
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Sno</th>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>US</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Willians</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Naveen</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Naveen</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

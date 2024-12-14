@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .head1 {
+        margin-top: 50px;
+        text-align: center;
+
+        & span {
+          font-size: 3rem;
+        }
+        & span:nth-child(1) {
+          color: #ff9934;
+        }
+        & span:nth-child(3) {
+          color: #118806;
+        }
+      }
+
+      .border {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        & div:nth-child(1) {
+          background-color: #ff9934;
+          padding: 5px;
+        }
+
+        & div:nth-child(2) {
+          background-color: #ffff;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        & div:nth-child(3) {
+          background-color: #118806;
+          padding: 5px;
+        }
+      }
+
+      .section-1 {
+        & p {
+          text-align: justify;
+          font-size: 1.7rem;
+        }
+
+        & .container {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 30px;
+          gap: 20px;
+          & div {
+            width: 30%;
+            height: 350px;
+
+            & img {
+              width: 100%;
+              height: 350px;
+            }
+
+            & figcaption {
+              font-size: 1.7rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="head1">
+      <span>The </span><span>Great </span><span>India </span>
+    </h2>
+
+    <div class="border">
+      <div></div>
+      <div>Our India</div>
+      <div></div>
+    </div>
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <figcaption>India Flag</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img
+              src="https://fairgaze.com/images/UploadedImages/thumbs/0295263_0295263_FreedomFightersfg.jpg"
+              alt="Freedom Fighters"
+            />
+            <figcaption>Freedom Fighters</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="border">
+      <div></div>
+      <div>India Before & After Independence</div>
+      <div></div>
+    </div>
+
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="https://www.mapsofindia.com/maps/india/india-map-prepartition.jpg"
+              alt=""
+            />
+            <figcaption>India Before Independence</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img
+              src="https://www.mapsofindia.com/images2/india-map-2019.jpg"
+              alt="India Map"
+            />
+            <figcaption>India After Independence</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="border">
+      <div></div>
+      <div>Indian freedom fighters</div>
+      <div></div>
+    </div>
+
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Jawaharlal Nehru Image"
+            />
+            <figcaption>Jawaharlal Nehru</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="
+              Subhas Chandra Bose Image"
+            />
+            <figcaption>Subhas Chandra Bose</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iaGc_1ghyoRQX2nqcC2EDGX-4reK580fYIMQrTdlMPgbUn8WszCaNm6-8eVMvM0QvDUpCw"
+              alt="
+              Bhagat Singh Image"
+            />
+            <figcaption>Bhagat Singh</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wK2Qjz4wAnR-2AzfE2ZCvj8hfNXdo5oFDrOFccksGJV8CfvlMEVPNgvzFlXDCHta47UtGQ"
+              alt="
+                Sardar Vallabhbhai Patel Image"
+            />
+            <figcaption>Sardar Vallabhbhai Patel</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div class="border">
+      <div></div>
+      <div>Indian politicians</div>
+      <div></div>
+    </div>
+
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="https://static.toiimg.com/thumb/imgsize-40750,msid-111845367,width-600,height-335,resizemode-75/111845367.jpg"
+              alt="Dr Manmohan Singh Image"
+            />
+            <figcaption>Dr Manmohan Singh</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://static.toiimg.com/thumb/imgsize-80696,msid-111845366,width-600,height-335,resizemode-75/111845366.jpg"
+              alt="
+              Dr Jitendra Singh Image"
+            />
+            <figcaption>Dr Jitendra Singh</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://static.toiimg.com/thumb/imgsize-18704,msid-111845365,width-600,height-335,resizemode-75/111845365.jpg"
+              alt="
+              Kapil Sibal Image"
+            />
+            <figcaption>Kapil Sibal</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://static.toiimg.com/thumb/imgsize-34632,msid-111845364,width-600,height-335,resizemode-75/111845364.jpg"
+              alt="
+              Dr S Jaishankar Image"
+            />
+            <figcaption>Dr S Jaishankar</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="border">
+      <div></div>
+      <div>Indian Businessman</div>
+      <div></div>
+    </div>
+
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="https://img.jagranjosh.com/images/2024/July/1372024/Ambani-Richest.jpg"
+              alt="Mukesh Ambani Image"
+            />
+            <figcaption>Mukesh Ambani</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://img.jagranjosh.com/images/2024/July/1372024/Adani-Richest.jpg"
+              alt="
+              Gautam Adani Image"
+            />
+            <figcaption>Gautam Adani</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://img.jagranjosh.com/images/2024/July/1372024/Jindal-Richest.jpg"
+              alt="
+              Savitri Jindal & family Image"
+            />
+            <figcaption>Kapil Sibal</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="https://img.jagranjosh.com/images/2024/July/1372024/Nadar-Richest.jpg"
+              alt="
+              Shiv Nadar Image"
+            />
+            <figcaption>Shiv Nadar</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div class="border">
+      <div></div>
+      <div>Indian sportsmen</div>
+      <div></div>
+    </div>
+
+    <section class="section-1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum
+        accusantium amet eaque delectus blanditiis sequi sapiente facilis? Nobis
+        voluptate iste perferendis quos labore dolorem, nam ipsam modi, illo,
+        minus deleniti facere saepe optio amet excepturi enim vel? Dolore
+        reprehenderit dignissimos distinctio possimus, error iste nostrum
+        perferendis eum nesciunt nam. Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Facere ipsum accusantium amet eaque delectus
+        blanditiis sequi sapiente facilis? Nobis voluptate iste perferendis quos
+        labore dolorem, nam ipsam modi, illo, minus deleniti facere saepe optio
+        amet excepturi enim vel? Dolore reprehenderit dignissimos distinctio
+        possimus, error iste nostrum perferendis eum nesciunt nam.
+      </p>
+      <div class="container">
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="
+                Sachin Tendulkar"
+            />
+            <figcaption>Sachin Tendulkar</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFcAWAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAGAAMEBQcCAf/EADQQAAIBAwMCAwYFBAMBAAAAAAECAwAEEQUSIQYxE0FRIjJhcYGRBxShsdEVI2LBQlLhJv/EABkBAAMBAQEAAAAAAAAAAAAAAAIDBAUBAP/EACARAAICAgMBAQEBAAAAAAAAAAABAhEDIQQSMRNBIjL/2gAMAwEAAhEDEQA/AG0umz3p9bokgDvVSGOal2i75UDAkEjj1rQ8EqVjPUGswwQvbKGd15ba2DnH3ocs5Ue38T8iLu4RyCGcmKHPI9nsT881Nj6euOpertqHdCW2ylcgKPM/vxWs6f0bpGmWoVELnO5i3m3riocmRofCFvZh91bXs775LI57grAu0/pzUZtF1Sc+HHZoEJ948fpW83Om27AhIsD5VEXT4E95BnPfFTvPMqjx4Mx21/D+aVN1xOyt/gvH605J+H93bqz2l0WbyV17/PFa+0ccY9lAPpTBaM+yQBQLJK/QnhhXhlnTGrXEd89teNJD+XG2SLduVjzzzznk0ZMyt7SkEHkEedBfVjPpPVElzFvWOZBnaccg8US6Vex3mnxyR4OGZTjy9B9jWnx5aozM0aZLQFnxSp62GXryq+xMolZHHk9qn2seHX5inUtfhUqG32nNccQoslfh5AXcsIwo3uOBgDBI/mj6eMBQZGVFPbLAUJfh8Xh0XUjtBlhunjU/DuP3oZ1+5iknnSW41G7uwC7Kj42KM8+g7H6fMZx5NXTNOCdWjRZZYPdJX489qgs1u0uBIMc/I1h0kupuFuLG7uY7bfs/uyAnOM+X8Uf6HpGo3XSZlNwySli8bN39D/uk5NMox7QQajqNpE5VpY1VTg5YcVUnUtNmlKR39r4np4ozWTXdjez3spmeVljDO6F9pOO478n4cmrOyGjmzC3WlSRBm2rNuLkkY5wecc/Ci6RqwXkldBN1dpE8y/mkQSRhTu89pxwflUHoeA/0mTcMMJ2DfMYom05P/k7yI7isUD7M84XHFVf4e2c0mhSSLG7r47ncBnjirOM9kedWXFtD7Q4pVZW8XtDilVkpE6iMxw89qm2yrAGnMCT7SoEb5wST/GaciiHpU20t1kyhAOGV+fQHn9CaVyZS+b6+jeNGP1j2Wix0CyjgN+scRiE0/iMh8jsUfbiutU0eKS0aKABNxySoAyab0q5uC9yLgMJN+7Denbj4cfrTer60llbl2PHwrN7WrZd1alSB+Ho9Dco11PI/PCKeTRFe3FlYWItFKDAwQvZfhQrJrKS21zNPqP5W4eNljRfeQH19Kzsa/BbRyWam6l8Z33b7lyzYznknK+XbH8Coya0hkpRT2w5u+n7e4uGkVvDaT2gy9mpyz6eWJiXcsPXihLo7qC1RGt5bqWMM+Y1kmaXLeoJ7fKjSLUjInB57GhacfQ04yVomiyhisbtMjw3hZW+ooV0mNNP0u1No7LEjlxhu7DJOfrmrnU7l00a/YEBvy7YBPc4qHbwS3KW1v4IiWZ1Kr5hR7zY8v/a7NOUUkewOKyOTCMRr4hKjjPFKpQjA+VKtS3WzMdXo4VMVItzscMRkDuPhXLDFdKcV17WwPHoa1++W2nMls2+QRgeGOMCgDq/qFf6ZKYctP4iDB7LnnNGXU6yNpTTQDMkHtAfDz/n6VkGuzi4lMMaGQeGd2AcjHbIHPl+tSPD/AEO+utF1onS+p6rC01zcQxWpziRyTuUj/qPv3py46Y0JZ/Dl1O1a4I2hvDbP74pnQ9Vv7Kwjs4J/EtPECLviztGBuxny5/15VUapEk+ozXEUsoEeW9gjkDjj6kefmKH5ysas0EvCXqfRHG+xaE+e5ZCp+3IqR0jqLWo1C2vp9y20gVGPxHI+9Ut91PqNphLSVPDZRt9lST9u378UOreOrSs+4mRtxJPc+te+cmqkclljdxRo0t292rqD7A9hV82JHAx6cij/AEGyaOPxp4WjkA2qrdx6/wAVmnQqHWdYhc48O3/uPnz29gPqRWvq1OxYfG/wU8z2l+npFKkzcUqooV2GXfmvA9RZJParwTYr0UDJkmfE0EkTHAdSufnWN9VaJfaJqnj3SbYH2lWVveHkV9SAf3rWbm6SCIO594hUBONxPYVbdR2UdxB+XljWRFULhh34xSs8uiQWKPdsyJrmSewlis1DLsZ1TBxICd4OPjyOKDtS1GXM8O2NBLGBg4G0kAn747/GtF1fpp7FklspnRUz/akbcCMdufTy9KBLnp+8NyUikUwDspHAHngeVK+saD+ck9or4pRPaSI0YMzPwccDJP2HOaiQ6fc3kjJZwSyFXO0hDzz69qLNK6cigjJkKytnOcYxRLpOnrCowiqoGFC9qXPMq0MhhbZYfh1oX9JsJZZcGeULn/EcnH60ZLLjvVdoybbDP/Z9o+Jx2qUQau4/9Y02R530yNIfMoPnSqPtNeU7qhPdjlrY3N+S0KqIwcM7NgD/AHV1baDawYNzI8zgZ2+6v80qVTNu6HNmY9T3csHUdw9w5KRy5UeSrwQB9MVqd66yOXHIIyPiKVKuc7/MA+A9yB2+UXAk9kEA+dBV7YYnbngHHpSpVkSZqpI7hsskAdvI+lWKRYXHpSpVwJKizsSklhLaTrvikzuGcEehB8iO4I5BqD0f1AusILKYn89EmSSOJQP+XwPqKVKtTgttSRmc/XVoJMDFKlSq4iP/2Q=="
+              alt="
+                Virat Kohli Image"
+            />
+            <figcaption>Virat Kohli</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="
+              Viswanathan Anand Image"
+            />
+            <figcaption>Viswanathan Anand</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure>
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="
+              Saina Nehwal Image"
+            />
+            <figcaption>Saina Nehwal</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="border">
+      <div></div>
+      <div>Copyright 2025, The Great India</div>
+      <div></div>
+    </div>
+  </body>
+</html>
