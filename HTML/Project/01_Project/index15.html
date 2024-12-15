@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      .header {
+        height: 100px;
+        width: 100%;
+        background-color: #118806;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        & h2 {
+          font-size: 2rem;
+        }
+        & small {
+          font-size: 1.5rem;
+        }
+      }
+
+      nav {
+        border: 3px solid white;
+        width: auto;
+        height: 40px;
+        background-color: black;
+        ul {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+
+          gap: 10px;
+          list-style-type: none;
+          li {
+            height: 100%;
+
+            & a {
+              height: 100%;
+              display: inline-block;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1.8rem;
+              padding-left: 20px;
+              padding-right: 20px;
+              text-decoration: none;
+            }
+          }
+          & li:nth-child(1) {
+            background-color: #118806;
+          }
+        }
+      }
+
+      main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        & aside {
+          background-color: black;
+          width: 30%;
+          & ul {
+            width: 100%;
+            text-decoration: none;
+            & li {
+              width: 100%;
+              border: 2px solid white;
+              & a {
+                height: 30px;
+                font-size: 1.7rem;
+                display: inline-block;
+                background-color: #118806;
+                color: white;
+                padding-left: 10px;
+
+                display: flex;
+                /* justify-content: center;/ */
+                align-items: center;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        & section {
+          width: 70%;
+          height: auto;
+          padding: 20px;
+          & details {
+            background-color: #118806;
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            & summary {
+              width: 100%;
+
+              font-size: 1.7rem;
+              padding: 20px;
+            }
+
+            & div {
+              padding: 20px;
+              p {
+                font-size: 1.5rem;
+                text-align: justify;
+              }
+            }
+          }
+        }
+      }
+      footer {
+        height: 100px;
+        width: 100%;
+        background-color: #118806;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        & h2 {
+          font-size: 2rem;
+        }
+        & small {
+          font-size: 1.5rem;
+        }
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h2>UiBrains Technologies</h2>
+      <small>The Smart Way Learning</small>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Courses</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Client</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside>
+        <ul>
+          <li><a href="">HTML</a></li>
+          <li><a href="">CSS</a></li>
+          <li><a href="">Javascript</a></li>
+          <li><a href="">Jquery</a></li>
+          <li><a href="">AJAX</a></li>
+          <li><a href="">Bootstrap</a></li>
+          <li><a href="">Angular Js</a></li>
+        </ul>
+      </aside>
+      <section>
+        <details>
+          <summary>HTML</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>CSS</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Javascript</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Jquery</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Ajax</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Ajax</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Bootstrap</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Angular Js</summary>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus repellendus voluptatibus rem aspernatur. Dolore
+              sit, veritatis, fuga at distinctio, quaerat officia quae aliquid
+              velit ut nam recusandae ipsa aperiam quia! Mollitia amet libero id
+              dolores expedita repudiandae quo! Dignissimos fugiat accusantium
+              quisquam nobis! Ad dolore optio tempore nobis sequi eum! Expedita
+              odio ullam nulla deleniti aspernatur repellat. Repudiandae, amet
+              illo! Fugit beatae amet architecto sit delectus minima nulla qui,
+              ullam, dolores corporis, cum maxime. Itaque fugiat eos accusamus
+              eaque reprehenderit!
+            </p>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <h2>Copyright @ 2025 UIBrain Technologies</h2>
+      <p>All Right Reserved</p>
+      <small>Developed and Maintained by Sahil Lagad</small>
+    </footer>
+  </body>
+</html>
