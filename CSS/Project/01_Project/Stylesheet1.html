@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylesheet 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 10px;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .heading-1 {
+        font-size: 2.2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .heading-2 {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .heading-3 {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .heading-4 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .para {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      .header {
+        background-color: #04a96d;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        & .para {
+          text-align: center;
+        }
+      }
+
+      .main {
+        width: 100%;
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        & .navbar {
+          width: 20%;
+          height: 100%;
+
+          & .list {
+            width: 100%;
+            height: auto;
+            list-style-type: none;
+            & .list-item {
+              background-color: #f1f1f1;
+              width: 100%;
+              border-radius: 7px;
+              margin-bottom: 10px;
+              & .link {
+                width: 100%;
+                text-align: left;
+                display: inline-block;
+                padding: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                color: black;
+                font-size: 1.3rem;
+              }
+            }
+            & .list-item:hover {
+              background-color: #04a96d;
+              & a {
+                color: white;
+              }
+            }
+          }
+        }
+        & .container {
+          width: 60%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        & .sidebar {
+          width: 20%;
+          background-color: #33a4e8;
+          color: white;
+          border-radius: 1rem;
+          padding: 1rem;
+        }
+      }
+
+      .btn {
+        background-color: #04a96d;
+        color: #f1f1f1;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #04a96d;
+        cursor: pointer;
+        transition: all ease-in-out 0.4s;
+
+        &:hover {
+          background-color: #f1f1f1;
+          color: #04a96d;
+        }
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="heading-1">Welcome to My Homepage</h2>
+      <p class="para">Use the menu to select different Stylesheets</p>
+    </header>
+    <main class="main">
+      <nav class="navbar">
+        <ul class="list">
+          <li class="list-item"><a href="" class="link">Stylesheet 1</a></li>
+          <li class="list-item"><a href="" class="link">Stylesheet 2</a></li>
+          <li class="list-item"><a href="" class="link">Stylesheet 3</a></li>
+          <li class="list-item"><a href="" class="link">Stylesheet 4</a></li>
+          <li class="list-item"><a href="" class="link">No Stylesheet</a></li>
+        </ul>
+      </nav>
+      <section class="container">
+        <h3 class="heading-3">Same Page Different Stylesheets</h3>
+        <article>
+          <p class="para">
+            This is a demonstration of how different stylesheets can change the
+            layout of your HTML page. You can change the layout of this page by
+            selecting different stylesheets in the menu, or by selecting one of
+            the following links:
+          </p>
+          <a href="#" class="btn">stylesheet 1</a>
+          <a href="#" class="btn">stylesheet 2</a>
+          <a href="#" class="btn">stylesheet 3</a>
+          <a href="#" class="btn">stylesheet 4</a>
+        </article>
+        <article>
+          <h3 class="heading-3">No Styles</h3>
+          <p class="para">
+            This page uses DIV elements to group different sections of the HTML
+            page. Click here to see how the page looks like with no stylesheet:
+          </p>
+          <a href="#" class="btn">No Stylesheet</a>
+        </article>
+        <article>
+          <h3 class="heading-3">CSS Styles</h3>
+          <p class="para">
+            This page uses DIV elements to group different sections of the HTML
+            page. Click here to see how the page looks like with no stylesheet:
+          </p>
+        </article>
+      </section>
+      <aside class="sidebar">
+        <h4 class="heading-4">Side-Bar</h4>
+        <p class="para">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat.
+        </p>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p class="para">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
+    </footer>
+  </body>
+</html>
